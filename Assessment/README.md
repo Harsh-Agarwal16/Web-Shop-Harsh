@@ -1,4 +1,10 @@
-The directory structure is made up of a modular monolithic design pattern. In this pattern, the application is organized into distinct modules, each responsible for specific business functionalities (e.g., product, category, customer, order). Each module typically includes its own set of files for handling routes, controllers, models, and services. This structure allows for a clear separation of concerns within the monolithic application.
+# Modular and Layered Design Pattern
+
+The application and module components is typically associated with the Modular Pattern in software design.
+
+The combination of Modular Pattern and Layered Architecture helps to keep the codebase organized, maintainable, and scalable, allowing developers to work on different parts of the application in isolation and making the code easier to understand and manage.
+
+The application is organized into distinct modules, each responsible for specific business functionalities (e.g., product, category, customer, order). Each module typically includes its own set of files for handling routes, controllers, models, and services. This structure allows for a clear separation of concerns within the monolithic application.
 
 Key characteristics of this design pattern include:
 
@@ -31,15 +37,16 @@ Key characteristics of this design pattern include:
 |-package.json
 |-README.md
 ```
+#### Note: We can have some more files like prettier, linting and also the test folder for Test Driven Development (TDD)
 
 ### Following is the module folder breakdown
 
 ```
  |-modules
     |- YourModuleName
-        |- controllers
+      |- controllers
     		|- YourModuleNameController.js
-		|- models
+		  |- models
 		    |- schemas
 			    |- YourModuleNameSchema.js
 	        |- YourModuleNameModel.js
@@ -47,14 +54,13 @@ Key characteristics of this design pattern include:
 	    	|- routeNames1.js 
 	    	|- routeNames2.js 
 	    	|- routeNames3.js 
-        |- services
-            |- YourModuleName.js
-        |- data
+      |- services
+          |- YourModuleName.js
+      |- repositeries
             |- YourModuleName.js        
 ```
-# Every Module will contain five different folders and each folder has separate functionality
 
-# Here is the breakdown: 
+# Module breakdown: 
 
 1. **routes:** This folder will contain route files for the module where endpoint will be defined.
 
@@ -62,7 +68,7 @@ Key characteristics of this design pattern include:
 
 3. **services:** This folder will contain services for the module where business logic will be handled.
 
-4. **data:** This folder will contain database queries for the module, mainly the fetch queries as add/update/delete these queries will handled in dbHelper service file.
+4. **repositeries:** This folder will contain database queries for the module, mainly the fetch queries as add/update/delete these queries will handled in dbHelper service file.
 
 5. **models/schemas:**  This folder will contain schemas for the module, where request schema will be defined for every route of the module.
 
