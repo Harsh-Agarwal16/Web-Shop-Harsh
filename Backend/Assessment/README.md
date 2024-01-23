@@ -45,7 +45,7 @@ Key characteristics of this design pattern include:
  |-modules
     |-YourModuleName
       |-models
-		    |-schemas
+		  |-schemas
 			    |- YourModuleNameSchema.js
       |- controllers
     		|- YourModuleNameController.js
