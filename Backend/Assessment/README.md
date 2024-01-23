@@ -42,21 +42,21 @@ Key characteristics of this design pattern include:
 ### Following is the module folder breakdown
 
 ```
- |-modules
-    |-YourModuleName
-      |-models
-		  |-schemas
-			    |- YourModuleNameSchema.js
-      |- controllers
-    		|- YourModuleNameController.js
-	    |- routes
-	    	|- routeNames1.js 
-	    	|- routeNames2.js 
-	    	|- routeNames3.js 
-      |- services
-          |- YourModuleName.js
-      |- repositeries
-            |- YourModuleName.js        
+|-modules
+ |-YourModuleName
+  |-models
+   |-schemas
+    |- YourModuleNameSchema.js
+  |- controllers
+   |- YourModuleNameController.js
+  |- routes
+   |- routeNames1.js 
+   |- routeNames2.js 
+   |- routeNames3.js 
+  |- services
+   |- YourModuleName.js
+  |- repositeries
+   |- YourModuleName.js        
 ```
 
 # Module breakdown: 
