@@ -44,12 +44,12 @@ Key characteristics of this design pattern include:
 ```
  |-modules
     |- YourModuleName
-      |- controllers
-    		|- YourModuleNameController.js
-		  |- models
+      |- models
 		    |- schemas
 			    |- YourModuleNameSchema.js
 	        |- YourModuleNameModel.js
+      |- controllers
+    		|- YourModuleNameController.js
 	    |- routes
 	    	|- routeNames1.js 
 	    	|- routeNames2.js 
