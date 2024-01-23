@@ -43,11 +43,10 @@ Key characteristics of this design pattern include:
 
 ```
  |-modules
-    |- YourModuleName
-      |- models
-		    |- schemas
+    |-YourModuleName
+      |-models
+		    |-schemas
 			    |- YourModuleNameSchema.js
-	        |- YourModuleNameModel.js
       |- controllers
     		|- YourModuleNameController.js
 	    |- routes
